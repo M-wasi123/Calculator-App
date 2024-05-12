@@ -164,7 +164,7 @@ font-size: x-large;
         border: none;
         }
         .tableButton{
-            padding: 20px 0px;
+            padding-top: 20px;
             column-gap: 15%;
             row-gap: 10px;
         }

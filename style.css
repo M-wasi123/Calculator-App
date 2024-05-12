@@ -147,14 +147,6 @@ font-size: x-large;
 }
 
 @media only screen and (max-width:510px) {
-    #calmode{
-        width: 70%;
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-        row-gap: 5px;
-        padding-bottom: 5px;
-    }
     .container{
         max-width:800px;
         padding: 0px;

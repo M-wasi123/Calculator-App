@@ -3,17 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Calculator</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
 </head>
 <body>
-        <div id="calmode">
-    <button id="but" onclick="simple()">Simple Calculator</button>
-    <button id="but" onclick="scientific()">Scientific Calculator</button>
-</div>
-
+    <div id="calmode">
+        <button id="but" onclick="simple()">Simple Calculator</button>
+        <button id="but" onclick="scientific()">Scientific Calculator</button>
+    </div>
     <div class="container" id="calcu">
         <div class="tableContainer">
 <div class="table">
@@ -86,7 +83,7 @@
     
 
         <td>
-            <input type="button" id="button" value="+/-" onclick="display('')" class="number">
+            <input type="button" id="button" value="Del" onclick="delet('')" class="number">
         </td>
         <td>
             <input type="button" id="button" value="0" onclick="display('0')" class="number">
@@ -205,9 +202,6 @@
     </div>
     </div>
     </div>
-   
-
-   
-
+    <script src="app.js"></script>
 </body>
 </html>

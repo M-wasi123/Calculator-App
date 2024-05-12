@@ -1,15 +1,17 @@
 let simpleCalulator = document.getElementById('calcu')
+let scientificCalulator = document.getElementById('s_calcu')
+
 
 function simple() {
     simpleCalulator.style.display = 'block'
-   
+   scientificCalulator.style.display = 'none'
 }
 function scientific() {
+    scientificCalulator.style.display = 'block'
     simpleCalulator.style.display = 'none'
+   
+
 }
-
-
-
 function display(val) {
     document.getElementById('result2').value += val;
 }
@@ -24,11 +26,18 @@ function solv() {
 
 function clearScreen1() {
     document.getElementById('result1').value =''
+    document.getElementById('result2').value =''
+
 }
 
 function clearScreen() {
     document.getElementById('result2').value =''
 } 
+
+function delet() {
+    var x= document.getElementById('result2').value;
+    document.getElementById('result2').value =x.substr(0,x.length-1);
+}
 function sign() {
     var x = document.getElementById('screen').value;
     var y = Math.sign(x)

@@ -287,7 +287,14 @@ font-size: x-large;
     background-color: rgb(245, 248, 248);
     color: black;
 }
-
+#butt:active{
+    background-color: rgb(245, 248, 248);
+    color: black;
+}
+#butt1:active{
+    background-color: rgb(245, 248, 248);
+    color: black;
+}
 
 
 @media only screen and (max-width:600px) {

@@ -1,12 +1,24 @@
+let simpleCalulator = document.getElementById('calcu')
+
+function simple() {
+    simpleCalulator.style.display = 'block'
+   
+}
+function scientific() {
+    simpleCalulator.style.display = 'none'
+}
+
+
+
 function display(val) {
     document.getElementById('result2').value += val;
 }
 
-function solve1() {
-    let x = document.getElementById('result2').value;
-    let y = eval(x);
-    document.getElementById('result1').value =y;
-        document.getElementById('result2').value = ''; 
+function solv() {
+    var x = document.getElementById('result2').value;
+    var y = eval(x)
+    document.getElementById('result1').value= y
+    document.getElementById('result2').value = '';
 }
 
 
@@ -45,13 +57,12 @@ function log() {
     document.getElementById('screen').value = '';
 }
 
-var power = document.querySelector('.but')
-power.addEventListener('click', function () {
+function pow1() {
     var x = document.getElementById('screen').value;
     var y = Math.pow(x, 2)
     document.getElementById('screen1').value= y
     document.getElementById('screen').value = '';
-})
+}
 
 function pow() {
     var x = document.getElementById('screen').value;

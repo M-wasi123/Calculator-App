@@ -4,19 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
     <script src="app.js"></script>
 </head>
 <body>
-    <div id="mode">
-        <h3>CALCULATOR MODE</h3>
-        <div>
-    <button id="Simple" onclick="simple()">Simple Calculator</button>
-    <button id="Scientific" onclick="scientific()">Scientific Calculator</button>
+        <div id="calmode">
+    <button id="but" onclick="simple()">Simple Calculator</button>
+    <button id="but" onclick="scientific()">Scientific Calculator</button>
 </div>
-</div>
+
     <div class="container" id="calcu">
         <div class="tableContainer">
 <div class="table">
@@ -100,7 +97,7 @@
 
         </td>
         <td>
-            <input type="button" id="button1" value="=" onclick="solve1()" class="egual">
+            <input type="button" id="button1" value="=" onclick="solv()" class="egual">
            
         </td>
     </div>
@@ -130,7 +127,7 @@
         <button id="butt" onclick="log()">
     log
         </button>
-        <button id="butt" class="but">
+        <button id="butt" onclick="pow1()">
     x<sup>2</sup>
         </button>
         <button id="butt" onclick="pow()">

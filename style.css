@@ -11,27 +11,24 @@ body{
     justify-content: center;
     align-items: center;
 }
-#mode{
-    width: 100%;
-    display:flex;
-    flex-direction: column;
-    row-gap: 10px;
-    padding-top: 10px;
-}
-#mode div{
+
+#calmode{
     width: 100%;
     display: flex;
     column-gap: 10px;
-    display: none;
+    padding-top: 5px;
+    padding-left: 10px;
 }
-#mode div button{
+
+#but{
     padding: 5px 10px;
     font-size: medium;
     background-color: beige;
     border: none;
     box-shadow: 1px 1px 1px 1px;
+   
 }
-#mode div button:active{
+#but:active{
     box-shadow: 0px 0px 0px 0px;
 }
 .container{
@@ -199,7 +196,7 @@ font-size: large;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
+display: none;
 }
 
 form{

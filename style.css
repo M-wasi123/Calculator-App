@@ -18,6 +18,8 @@ body{
     column-gap: 10px;
     padding-top: 5px;
     padding-left: 10px;
+    position: absolute;
+    top: 5px;
 }
 
 #calmode button{
@@ -39,7 +41,7 @@ body{
     justify-content: center;
     align-items: center;
     display: none;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 .tableContainer{
     width: 100%;
@@ -204,7 +206,7 @@ font-size: x-large;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-margin-top: -10px;
+margin-top: 5px;
 }
 
 form{

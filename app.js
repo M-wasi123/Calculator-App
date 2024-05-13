@@ -18,8 +18,13 @@ function display(val) {
 
 function solv() {
     var x = document.getElementById('result2').value;
-    var y = eval(x)
-    document.getElementById('result1').value= y
+        var y = eval(x);
+        if (isNaN(y)) {
+            document.getElementById('result1').value = '';
+        } else {
+            document.getElementById('result1').value = y;
+        }
+    
     document.getElementById('result2').value = '';
 }
 

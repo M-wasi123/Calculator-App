@@ -9,7 +9,7 @@ function simple() {
 function scientific() {
     scientificCalulator.style.display = 'block'
     simpleCalulator.style.display = 'none'
-   
+   scientificCalulator.style.marginTop = '50px'
 
 }
 function display(val) {

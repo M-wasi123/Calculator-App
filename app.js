@@ -1,3 +1,7 @@
+
+
+
+
 let simpleCalulator = document.getElementById('calcu')
 let scientificCalulator = document.getElementById('s_calcu')
 
@@ -5,19 +9,27 @@ let scientificCalulator = document.getElementById('s_calcu')
 function simple() {
     simpleCalulator.style.display = 'block'
    scientificCalulator.style.display = 'none'
+let colour = Math.floor(Math.random()*2569)
+document.body.style.backgroundColor = '#' +colour
+   
 }
 function scientific() {
     scientificCalulator.style.display = 'block'
     simpleCalulator.style.display = 'none'
    scientificCalulator.style.marginTop = '50px'
+   let colour = Math.floor(Math.random()*2569)
+document.body.style.backgroundColor = '#' +colour
 
 }
 function display(val) {
+    
     document.getElementById('result2').value += val;
+    document.getElementById('result1').value += val;
+
 }
 
 function solv() {
-    var x = document.getElementById('result2').value;
+    var x = document.getElementById('result1').value;
         var y = eval(x);
         if (isNaN(y)) {
             document.getElementById('result1').value = '';
@@ -42,6 +54,8 @@ function clearScreen() {
 function delet() {
     var x= document.getElementById('result2').value;
     document.getElementById('result2').value =x.substr(0,x.length-1);
+    document.getElementById('result1').value =x.substr(0,x.length-1);
+
 }
 function sign() {
     var x = document.getElementById('screen').value;

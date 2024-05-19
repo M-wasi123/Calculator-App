@@ -14,11 +14,13 @@
     <div class="container" id="calcu">
         <div class="tableContainer">
 <div class="table">
+    <div class="screen-shadow">
     <td><input type="text" id="result1" class="screen1" disabled></td>
         <td><input type="text" id="result2" class="screen2" disabled></td>
         
         <td><input type="text" id="result3" class="screen3" disabled ></td>
-<div class="tableButton">
+    </div>
+        <div class="tableButton">
         <td>
             <input type="button" id="button" value="%" onclick="display('%')" class="operator">
         </td>
@@ -193,7 +195,7 @@
     C
         </button>
         <button id="butt1" onclick="del()">
-    DEL
+    Del
         </button>
         <button id="butt1" onclick="solve()">
     =

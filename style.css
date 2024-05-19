@@ -45,7 +45,7 @@ body{
 }
 .tableContainer{
     width: 100%;
-background-color: rgb(20, 20, 20);
+background-color: rgba(128, 121, 121, 0.815);
 
 }
 .table{
@@ -62,7 +62,7 @@ padding-bottom: 15px;
 color: white;
 text-align: right;
 font-size: xx-large;
-   background-color: rgba(112, 111, 111, 0.815);
+   background-color: rgba(128, 121, 121, 0.815);
 }
 
 .screen2{
@@ -74,7 +74,7 @@ padding-bottom: 30px;
 color: white;
 text-align: right;
 font-size: x-large;
-   background-color: rgba(112, 111, 111, 0.815);
+   background-color: rgba(128, 121, 121, 0.815);
 }
 .screen3{
     width: 100%;
@@ -83,7 +83,7 @@ font-size: x-large;
     margin-bottom: 10px;
     border: none;
     outline: none;
-   background-color: rgba(112, 111, 111, 0.815);
+   background-color: rgba(128, 121, 121, 0.815);
 }
 
 .tableButton{
@@ -94,7 +94,7 @@ font-size: x-large;
     column-gap: 70px;
     row-gap: 10px;
     padding: 10px 0px;
-    background-color:rgb(20, 20, 20);
+    background-color:rgba(128, 121, 121, 0.815);
 }
 #button{
     width: 50px;
@@ -105,6 +105,8 @@ font-size: x-large;
     row-gap: 10px;
     padding: 10px;
     background-color: rgb(20, 20, 20);
+    box-shadow: 1px 0px 2px 1px rgba(153, 152, 152, 0.815);
+
 }
 #button2{
     width: 50px;
@@ -114,7 +116,10 @@ font-size: x-large;
     font-size: x-large;
     row-gap: 10px;
     padding: 10px;
-    background-color: rgb(20, 20, 20)
+    background-color: rgb(20, 20, 20);
+    box-shadow: 1px 0px 2px 1px rgba(153, 152, 152, 0.815);
+
+
 }
 #button1{
     width: 50px;
@@ -124,28 +129,33 @@ font-size: x-large;
     font-size: x-large;
     row-gap: 10px;
     padding: 10px;
-    background-color: rgb(20, 20, 20)
+    background-color: rgb(20, 20, 20);
+    box-shadow: 1px 0px 2px 1px rgba(153, 152, 152, 0.815);
+
 }
 #button:hover {
-    background-color: white;
+    background-color: rgba(128, 121, 121, 0.815);
     color: black;
 }
 #button1:hover {
-    background-color: white;
+    background-color: rgba(128, 121, 121, 0.815);
     color: black;
 }
 #button2:hover {
-    background-color: white;
+    background-color: rgba(128, 121, 121, 0.815);
     color: black;
 }
 #button:active {
-    background-color: rgb(72, 146, 168);
+    background-color: rgba(128, 121, 121, 0.815);
+    box-shadow: 0px 0px 0px 0px;
 }
 #button1:active {
-    background-color: rgb(72, 146, 168);
+    background-color: rgba(128, 121, 121, 0.815);
+    box-shadow: 0px 0px 0px 0px;
 }
 #button2:active {
-    background-color: rgb(72, 146, 168);
+    background-color: rgba(128, 121, 121, 0.815);
+    box-shadow: 0px 0px 0px 0px;
 }
 
 @media only screen and (max-width:510px) {
@@ -213,11 +223,10 @@ form{
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(129, 127, 127);
 }
 .screen{
     width: 100%;
-    background-color: rgb(20, 20, 20);
 }
 #screen1{
     width: 100%;
@@ -251,16 +260,16 @@ font-size: x-large;
     row-gap: 7px;
     padding: 10px;
     padding-bottom: 5px;
-    background-color: rgb(20, 20, 20)
+    background-color: rgb(161, 159, 159);
 }
 .buttons1{
     width: 100%;
     display: grid;
     grid-template-columns: auto auto auto ;
     justify-content:space-around ;
-    padding: 0px 20px;
+    padding: 10px 20px;
     padding-bottom: 5px;
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(161, 159, 159);
 }
 #butt{
     width: 50px;
@@ -272,18 +281,19 @@ font-size: x-large;
     font-size: 22px;
     text-align: center;
     line-height: 50px;
+    box-shadow: 1px 1px 2px 1px;
 }
 #butt1{
-    width: 50px;
-    height: 50px;
+    width: 60px;
     outline: none;
     border: none;
     background-color: rgb(20, 20, 20);
     color: white;
     font-size: xx-large;
-    padding-bottom: 10px;
+    padding: 5px;
     text-align: center;
     line-height: 50px;
+    box-shadow: 1px 1px 2px 1px;
 }
 #butt:hover{
     background-color: rgb(245, 248, 248);
@@ -296,10 +306,12 @@ font-size: x-large;
 #butt:active{
     background-color: rgb(245, 248, 248);
     color: black;
+     box-shadow: 0px 0px 0px 0px;
 }
 #butt1:active{
     background-color: rgb(245, 248, 248);
     color: black;
+     box-shadow: 0px 0px 0px 0px;
 }
 
 

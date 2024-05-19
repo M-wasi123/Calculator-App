@@ -330,19 +330,30 @@ font-size: x-large;
     }
     
 .buttons{
-    row-gap: 0px;
+    row-gap: 4px;
+    column-gap: 30px;
 }
 .buttons1{
-  padding: 0px 20px;
-    padding-bottom: 0px;
+  padding: 3px 20px;
+}
+#butt{
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+}
+#butt1{
+    font-size: 20px;
+    padding: 0px;
 }
 
     #butt:active{
         background-color: rgb(20, 20, 20);
         color: rgb(248, 241, 229);
+        box-shadow: 0px 0px 0px 0px;
     }
     #butt1:active{
         background-color: rgb(20, 20, 20);
         color: rgb(248, 241, 229);
+        box-shadow: 0px 0px 0px 0px;
     }
 }

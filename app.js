@@ -16,7 +16,6 @@ document.body.style.backgroundColor = '#' +colour
 function scientific() {
     scientificCalulator.style.display = 'block'
     simpleCalulator.style.display = 'none'
-   scientificCalulator.style.marginTop = '50px'
    let colour = Math.floor(Math.random()*2569)
 document.body.style.backgroundColor = '#' +colour
 

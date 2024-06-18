@@ -10,350 +10,134 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 5px 0px 0px;
+    overflow: hidden;
 }
-
-#calmode{
-    width: 100%;
-    display: flex;
-    column-gap: 20px;
-    padding-top: 5px;
-    padding-left: 10px;
-    position: absolute;
-    top: 2px;
-}
-
 #calmode button{
-    padding: 5px 10px;
-    font-size: medium;
-    background-color: beige;
-    border: none;
-    box-shadow: 1px 1px 1px 1px;
-   /* position: absolute; */
-}
+        padding: 3px 7px;
+        border-radius: 10px;
+        border:none;
+        outline: none;
+        box-shadow: 2px 2px 2px 2px rgb(94, 91, 91);
+    }
 #calmode button:active{
-    box-shadow: 0px 0px 0px 0px;
-}
-.container{
-    max-width:450px;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
-    margin-top: 50px;
+        transform: translateY(2px);
+        box-shadow: 0px 0px 0px 0px;
+    }
+/* .container{
+    border-radius: 20px;
 }
 .tableContainer{
-    width: 100%;
-background-color: rgba(128, 121, 121, 0.815);
-
-}
+    border-radius: 20px;
+} */
 .table{
-width: 100%;
-/* display: none; */
+    width: 100%;
+    height: 100%;
+    padding: 0px 10px 10px 10px;
+    background-color: rgb(5, 5, 5);
+    margin-top: 30px;
 }
-
-.screen1{
+.screen-shadow{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.screen-shadow input{
     width: 100%;
     border: none;
-outline: none;
-padding: 40px 20px;
-padding-bottom: 15px;
-color: white;
-text-align: right;
-font-size: xx-large;
-   background-color: rgba(128, 121, 121, 0.815);
-}
-
-.screen2{
-    width: 100%;
-    border: none;
-outline: none;
-padding: 0px 20px;
-padding-bottom: 30px;
-color: white;
-text-align: right;
-font-size: x-large;
-   background-color: rgba(128, 121, 121, 0.815);
-}
-.screen3{
-    width: 100%;
-    padding: 10px 10px;
+    padding: 25px 20px 0px;
+    font-size: x-large;
     text-align: right;
-    margin-bottom: 10px;
-    border: none;
-    outline: none;
-   background-color: rgba(128, 121, 121, 0.815);
+    background-color: rgb(5, 5, 5);
+color: white;
 }
-
+#result2{
+    padding-bottom: 40px;
+    font-size: large;
+}
 .tableButton{
-    width: 100%;
     display: grid;
     grid-template-columns: auto auto auto auto;
-    justify-content: center;
-    column-gap: 70px;
-    row-gap: 10px;
-    padding: 10px 0px;
-    background-color:rgba(128, 121, 121, 0.815);
+    justify-content: space-between;
+    row-gap: 15px;
 }
-#button{
+.tableButton input{
     width: 50px;
-    display: grid;
+    height: 50px;
+    line-height: 50px;
     border: none;
-    color: white;
-    font-size: x-large;
-    row-gap: 10px;
-    padding: 10px;
-    background-color: rgb(20, 20, 20);
-    box-shadow: 1px 0px 2px 1px rgba(153, 152, 152, 0.815);
-
+    box-shadow: 1px 1px 1px 1px white;
+    font-size: large;
+    border-radius: 50%;
 }
-#button2{
-    width: 50px;
-    display: grid;
-    border: none;
-    color: white;
-    font-size: x-large;
-    row-gap: 10px;
-    padding: 10px;
-    background-color: rgb(20, 20, 20);
-    box-shadow: 1px 0px 2px 1px rgba(153, 152, 152, 0.815);
-
-
-}
-#button1{
-    width: 50px;
-    display: grid;
-    border: none;
-    color: white;
-    font-size: x-large;
-    row-gap: 10px;
-    padding: 10px;
-    background-color: rgb(20, 20, 20);
-    box-shadow: 1px 0px 2px 1px rgba(153, 152, 152, 0.815);
-
-}
-#button:hover {
-    background-color: rgba(128, 121, 121, 0.815);
-    color: black;
-}
-#button1:hover {
-    background-color: rgba(128, 121, 121, 0.815);
-    color: black;
-}
-#button2:hover {
-    background-color: rgba(128, 121, 121, 0.815);
-    color: black;
-}
-#button:active {
-    background-color: rgba(128, 121, 121, 0.815);
-    box-shadow: 0px 0px 0px 0px;
-}
-#button1:active {
-    background-color: rgba(128, 121, 121, 0.815);
-    box-shadow: 0px 0px 0px 0px;
-}
-#button2:active {
-    background-color: rgba(128, 121, 121, 0.815);
-    box-shadow: 0px 0px 0px 0px;
-}
-
-@media only screen and (max-width:510px) {
-    *{
-        overflow: hidden;
-    }
-    .container{
-        max-width:800px;
-        padding: 0px;
-        margin-top: 45px;
-    }
-    .screen3{
-        display: none;
-    }
-    .tableContainer{
-        height: 100%;
-    }
-   
-    .table{
-        width: 100%;
-        border: none;
-        }
-        .tableButton{
-            padding: 20px;
-            column-gap: 15%;
-            row-gap: 10px;
-        }
-        #button{
-            padding: 10px 0px;
-font-size: x-large;
-        }
-        #button2{
-            padding: 10px 0px ;
-            font-size: x-large;
-        }
-        #button1{
-            padding: 10px 0px ;
-            font-size: xx-large;
-        }
-        
-}
-
-@media only screen and (max-width:321px) {
-    .tableButton{
-        column-gap: 10%;
-    }
-    #button{
-        width: 140%;
-        padding: 10px 10px;
-    }
+.tableButton input:active{
+    box-shadow: 0px 0px 0px 0px ;
+transform: translateY(2px);
 }
 
 .cotainer{
-    max-width:500px;
+    max-width: 350px;
     width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-margin-top: 5px;
-}
-
-form{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(129, 127, 127);
+    height: 100%;
+    padding: 0px 10px 10px 10px;
+    background-color: black;
+    margin-top: 30px;
 }
 .screen{
+    display: flex;
+    flex-direction: column;
     width: 100%;
 }
-#screen1{
+form input{
     width: 100%;
+    padding: 25px 0px 0px;
+    text-align: right;
+    font-size: x-large;
+    background-color: black;
     border: none;
-outline: none;
-padding: 40px 20px;
-padding-bottom: 15px;
-color: white;
-text-align: right;
-font-size: xx-large;
-
+    color: white;
 }
 #screen{
-    width: 100%;
-    border: none;
-outline: none;
-padding: 0px 20px;
-padding-bottom: 30px;
-color: white;
-text-align: right;
-font-size: x-large;
+    padding: 20px 20px 30px;
+    font-size: large;
 }
-
-
 .buttons{
     width: 100%;
     display: grid;
     grid-template-columns: auto auto auto auto;
-    text-align: center;
-    justify-content:space-around ;
-    row-gap: 7px;
-    padding: 10px;
-    padding-bottom: 5px;
-    background-color: rgb(161, 159, 159);
+    gap: 10px 50px;
+    justify-content: center;
+}
+.buttons button{
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    border: none;
+    font-size: 16px;
+    box-shadow: 1px 1px 1px 1px white;
+}
+.buttons button:active{
+box-shadow: 0px 0px 0px 0px;
+transform: translateY(2px);
 }
 .buttons1{
     width: 100%;
     display: grid;
     grid-template-columns: auto auto auto ;
-    justify-content:space-around ;
-    padding: 10px 20px;
-    padding-bottom: 5px;
-    background-color: rgb(161, 159, 159);
+    justify-content: space-between;
+    padding: 10px 35px 5px;
 }
-#butt{
-    width: 50px;
-    height: 50px;
-    outline: none;
-    border: none;
-    background-color: rgb(20, 20, 20);
-    color: white;
-    font-size: 22px;
-    text-align: center;
-    line-height: 50px;
-    box-shadow: 1px 1px 2px 1px;
-}
-#butt1{
+.buttons1 button{
     width: 60px;
-    outline: none;
+    height: 45px;
     border: none;
-    background-color: rgb(20, 20, 20);
-    color: white;
-    font-size: xx-large;
-    padding: 5px;
-    text-align: center;
-    line-height: 50px;
-    box-shadow: 1px 1px 2px 1px;
+    border-radius: 40% 40% 0% 0%;
+    font-size: large;
+    box-shadow: 1px 1px 1px 1px white;
 }
-#butt:hover{
-    background-color: rgb(245, 248, 248);
-    color: black;
-}
-#butt1:hover{
-    background-color: rgb(245, 248, 248);
-    color: black;
-}
-#butt:active{
-    background-color: rgb(245, 248, 248);
-    color: black;
-     box-shadow: 0px 0px 0px 0px;
-}
-#butt1:active{
-    background-color: rgb(245, 248, 248);
-    color: black;
-     box-shadow: 0px 0px 0px 0px;
-}
-
-
-@media only screen and (max-width:600px) {
-    .body{
-        
-        width: 100%;
-        height: 100%;   
-    }
-    #screen1{
-        padding-top: 20px;
-        padding-bottom: 8px;
-    }
-    #screen{
-        padding-bottom: 15px;
-    }
-    
-.buttons{
-    row-gap: 4px;
-    column-gap: 30px;
-}
-.buttons1{
-  padding: 3px 20px;
-}
-#butt{
-    height: 40px;
-    font-size: 18px;
-    line-height: 40px;
-}
-#butt1{
-    font-size: 20px;
-    padding: 0px;
-}
-
-    #butt:active{
-        background-color: rgb(20, 20, 20);
-        color: rgb(248, 241, 229);
-        box-shadow: 0px 0px 0px 0px;
-    }
-    #butt1:active{
-        background-color: rgb(20, 20, 20);
-        color: rgb(248, 241, 229);
-        box-shadow: 0px 0px 0px 0px;
-    }
+.buttons1 button:active{
+box-shadow: 0px 0px 0px 0px;
+transform: translateY(2px);
 }

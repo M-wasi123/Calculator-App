@@ -24,22 +24,35 @@ document.body.style.backgroundColor = '#' +colour
 function display(val) {
     
     document.getElementById('result2').value += val;
-    document.getElementById('result1').value += val;
+    if (solv()) {
+    document.getElementById('result2').value = '';
+        
+    }
+    // document.getElementById('result1').value += val;
 
 }
 
 function solv() {
-    var x = document.getElementById('result1').value;
+    var x = document.getElementById('result2').value;
         var y = eval(x);
         if (isNaN(y)) {
             document.getElementById('result1').value = '';
         } else {
             document.getElementById('result1').value = y;
         }
-    
-    document.getElementById('result2').value = '';
-}
 
+}
+function sol() {
+    var x = document.getElementById('result2').value;
+        var y = eval(x);
+        if (isNaN(y)) {
+            document.getElementById('result1').value = '';
+        } else {
+            document.getElementById('result1').value = y;
+        }
+    document.getElementById('result2').value = '';
+
+}
 
 function clearScreen1() {
     document.getElementById('result1').value =''

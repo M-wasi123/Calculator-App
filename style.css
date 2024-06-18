@@ -154,4 +154,16 @@ transform: translateY(2px);
         padding: 10px 20px 15px;
         font-size: medium;
     }
+    .buttons button{
+        width: 42px;
+        height: 42px;
+        line-height: 42px;
+        border-radius: 50%;
+        border: none;
+        font-size: 15px;
+        box-shadow: 1px 1px 1px 1px white;
+    }
+    .buttons1 button{
+        height: 40px;
+    }
 }
